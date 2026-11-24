@@ -105,6 +105,7 @@ set(msg_files
   msg/TerrainRequest.msg
   msg/Thrust.msg
   msg/TimesyncStatus.msg
+  msg/TrackPoint.msg
   msg/Trajectory.msg
   msg/Tunnel.msg
   msg/VehicleInfo.msg
@@ -114,7 +115,7 @@ set(msg_files
   msg/WaypointList.msg
   msg/WaypointReached.msg
   msg/WheelOdomStamped.msg
-  # [[[end]]] (sum: lZuwMz8gIO)
+  # [[[end]]] (sum: 990EnFHu39)
 )
 
 set(srv_files
