@@ -83,7 +83,7 @@ Also publishes gimbal pose to TF when parameter tf_send==true</description>
     <description>@brief GPS_INPUT GPS plugin.
 @plugin gps_input
 
-Sends &lt;a href="https://mavlink.io/en/messages/common.html#GPS_INPUT"&gt;GPS_INPUT MAVLink messages&lt;/a&gt;</description>
+Sends &lt;a href=&quot;https://mavlink.io/en/messages/common.html#GPS_INPUT&quot;&gt;GPS_INPUT MAVLink messages&lt;/a&gt;</description>
   </class>
   <class name="gps_rtk" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::GpsRtkPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief GPS RTK plugin
@@ -124,7 +124,7 @@ to the FCU and/or receive landing target tracking data coming from the FCU. Impl
     <description>@brief MagCalStatus plugin.
 @plugin mag_calibration_status
 
-Example and "how to" for users.</description>
+Example and &quot;how to&quot; for users.</description>
   </class>
   <class name="mocap_pose_estimate" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::MocapPoseEstimatePlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief MocapPoseEstimate plugin
@@ -232,6 +232,12 @@ back to the FCU.  TERRAIN_CHECK point queries are handled via a
 service call to the server, which responds with elevation data
 that is returned to the FCU as TERRAIN_REPORT.</description>
   </class>
+  <class name="track_point" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::TrackPointPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+    <description>@brief Track Point plugin
+@plugin track_point
+
+Publishes MAV_CMD 31999 (TRACK_POINT) COMMAND_LONG as mavros_msgs/TrackPoint.</description>
+  </class>
   <class name="trajectory" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::TrajectoryPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Trajectory plugin to receive planned path from the FCU and
 send back to the FCU a corrected path (collision free, smoothed)
@@ -278,4 +284,4 @@ This plugin allows computing and publishing wheel odometry coming from FCU wheel
 Can use either wheel's RPM or WHEEL_DISTANCE messages (the latter gives better accuracy).</description>
   </class>
 </library>
-<!-- [[[end]]] (sum: oo/YfYwrxJ) -->
+<!-- [[[end]]] (sum: FnrnO/96HZ) -->
