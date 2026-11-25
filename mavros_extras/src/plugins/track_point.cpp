@@ -21,6 +21,12 @@ using namespace std::placeholders;
 
 static constexpr uint16_t MAV_CMD_TRACK_POINT = 31999;
 
+/**
+ * @brief Track Point plugin
+ * @plugin track_point
+ *
+ * Publishes MAV_CMD 31999 (TRACK_POINT) COMMAND_LONG as mavros_msgs/TrackPoint.
+ */
 class TrackPointPlugin : public plugin::Plugin
 {
 public:
